@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="$author">
+  <title>$title</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="templates/paper.css">
+</head>
+<body>
+  <header>
+    <h1 class="title">$title</h1>
+    <h2 class="author">$author</h2>
+  </header>
+  <p class="abstract">
+      The following publications are managed in a revision control system and written
+      in Pandoc Markdown to generate multiple output formats.
+  </p>
+  <h1>Publications</h1>
+  [% FOREACH repo IN repositories %]
+    [% INCLUDE 'repository.tpl' %]
+  [% END %] 
+</body>

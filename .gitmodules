@@ -1,0 +1,6 @@
+[submodule "mtsr2012"]
+	path = repos/mtsr2012
+	url = git://github.com/jakobib/mtsr2012.git
+[submodule "ticer2012"]
+	path = repos/ticer2012
+	url = git://github.com/jakobib/ticer2012.git
